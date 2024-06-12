@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import useStore from './store.js'
 import './App.css'
 
 import Button from './Button.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useStore()
 
   return (
     <>
       <div>
           <h1>Remote Application</h1>
+          <Button />
       </div>
+        <div>Current count is: {count}</div>
     </>
   )
 }
