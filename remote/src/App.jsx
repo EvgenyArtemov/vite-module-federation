@@ -12,7 +12,6 @@ function App() {
     <>
       <div>
           <h1>Remote Application</h1>
-          <Button>Remote Button</Button>
       </div>
     </>
   )
